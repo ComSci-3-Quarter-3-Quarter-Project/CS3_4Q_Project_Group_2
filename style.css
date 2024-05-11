@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'DkCrayon';
+    src: url(DkCoolCrayon-xJyV.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #B4C8EA;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: min-content;
+    background-color: #F7CAC9;
+    box-shadow: -1px -13px 29px 14px rgba(120,120,120,0.36);
+    position: fixed;
+}
+
+.headerLogo{
+    height:4vh;
+    padding: 0.5vw;
+    margin-left: 1vw;
+}
+
+.titleHead{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #4D6794;
+}
+
+#p1Section{
+    display: flex;
+    margin-top: 8vh;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+#title{
+    font-size: 3em;
+    font-family: Helvetica;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    font-family: 'DkCrayon';
+    color: #FF9ACB;
+    text-shadow: #2c4b80;
+    text-shadow:
+    2px 2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff;
+}
+
+
+
+#description{
+    font-size: 1.5em;
+    margin-top: 1.6vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signupBtn{
+    width: max-content;
+    height: max-content;
+    margin-top: 4vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFDCDB;
+    border: none;
+    color: #4D6794;
+    font-size: 1.7em;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 4px;
+}
+
+#signupBtn:hover{
+    text-decoration: underline;
+    box-shadow: -1px 10px 9px 0px rgba(140,164,209,1);
+}   
+
+#gallery{
+    margin-top: 5vh;
+}
+
+#gallery img{
+    width: 24.7vw;
+    margin-bottom: -2vh;
+}
+
+#mask{
+    margin-top: -1vh;
+    position: absolute;
+    z-index: 1;
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(#B4C8EA, #b4c8eaa9, #b4c8ea67, #b4c8ea1c, #b4c8ea07, #b4c8ea07);
+}
+
+
+
