@@ -1,7 +1,7 @@
  <title>Document</title>
 </head>
 <body>
-    <h1>Welcome </h1><h1 id="name"></h1>
+    <h1>Welcome </h1><h1 id="fname"></h1>
     <!-- get data from sign up form by  $_GET['varname']-->
     <img src="images/pfp.png" alt="">
     <h3 id="name"></h3><br><br>
@@ -19,14 +19,14 @@
 </html>
     <section>
         <h1>Welcome </h1><h1 id="name"></h1>
-        <!-- get data from sign up form by  $_GET['varname']-->
+        <!-- get data from sign up form by  local storage-->
         <img src="images/pfp.png" alt="">
         <h3 id="name"></h3><br><br>
         <p>Sex: </p><p id="sex"></p><br><br>
         <p>Email Address: </p><p id="emailAddress"></p><br><br>
         <p>Password: </p><p id="password"></p><br><br>
         <p>Contact Number: </p><p id="contactNumber"></p>
-        <p>Why do you support our campaign? </p><br><p id="Support"></p>
+        <p>Why do you support our campaign? </p><br><p id="support"></p>
         <link rel="stylesheet" href="p3Style.css">
     </section>
 
@@ -34,4 +34,18 @@
          <p>Made by Althea Nicole Enargan, Angela Marie Sabater, Dannica Grace Vosotros. 2024</p>
     </footer>
 </body>
+<script>
+    var name = JSON.stringify(localStorage.getItem("fname" + "lname));
+    document.getELementbyId('name').innerHTML = name;
+    var sex = JSON.stringify(localStorage.getItem('sex'));
+    document.getELementbyId('sex').innerHTML = sex;
+    var email = JSON.stringify(localStorage.getItem('email'));
+    document.getELementbyId('emailAddress').innerHTML = email;
+    var password = JSON.stringify(localStorage.getItem('password'));
+    document.getELementbyId('password').innerHTML = password;
+    var contact = JSON.stringify(localStorage.getItem('contact'));
+    document.getELementbyId('contactNumber').innerHTML = contact;
+    var whyCampaign = JSON.stringify(localStorage.getItem('whyCampaign'));
+    document.getELementbyId('support').innerHTML = whyCampaign;
+</script>
 </html>
