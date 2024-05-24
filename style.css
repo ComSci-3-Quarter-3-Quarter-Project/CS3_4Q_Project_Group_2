@@ -48,6 +48,25 @@ header{
     height: max-content;
 }
 
+#p1logo{
+    display: inline;
+    position: absolute;
+}
+
+.background{
+    width: 20vw;
+    display: inline;
+    position: absolute;
+}
+
+#bgLeft{
+    left: 20%;
+}
+
+#bgRight{
+    right: 20%;
+}
+
 #title{
     font-size: 3.5em;
     font-family: Helvetica;
