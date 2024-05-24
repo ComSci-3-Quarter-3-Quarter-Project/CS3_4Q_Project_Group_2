@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body{
@@ -61,15 +62,16 @@ header{
     -2px 2px 0 #ffffff,
     -2px -2px 0 #ffffff,
     2px -2px 0 #ffffff;
+    padding: 1vw;
 }
 
-
-
 #description{
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 1.6vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    /* color: rgb(75, 46, 33); */
+    color: rgb(61, 61, 131);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -79,10 +81,11 @@ header{
     height: max-content;
     margin-top: 4vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #FFDCDB;
+    background-color: #F7CAC9;
     border: none;
     color: #4D6794;
     font-size: 1.7em;
+    margin-bottom: 1.3vh;
     padding: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -92,16 +95,37 @@ header{
 
 #signupBtn:hover{
     text-decoration: underline;
+    background-color: #ffd7d6;
     
 }   
 
 #gallery{
     margin-top: 5vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #gallery img{
-    width: 24.77vw;
+    width: 24.75vw;
     margin-bottom: -2vh;
+    display: inline;
+}
+
+#galleryTitle{
+    font-family: 'DkCrayon';
+    font-size: 5em;
+    position: absolute;
+    text-align: center;
+    top: 97%;
+    margin-top: 6vh;
+    color: #FF9ACB;
+    text-shadow:
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white;
+    background-color: rgba(207, 214, 255, 0.705);
+    width: 100vw;
 }
 
 #mask{
@@ -110,7 +134,7 @@ header{
     z-index: 1;
     height: 20vh;
     width: 100%;
-    background-image: linear-gradient(#B4C8EA, #B4C8EA, #b4c8eaa9, #b4c8ea67, #b4c8ea1c, #b4c8ea07, #b4c8ea07);
+    background-image: linear-gradient(#B4C8EA, #b4c8eaee, #b4c8eab6, #b4c8ea7a, #b4c8ea52, #b4c8ea3a, #b4c8ea1c, #b4c8ea1c, #b4c8ea0e, #b4c8ea00);
 }
 
 footer{
