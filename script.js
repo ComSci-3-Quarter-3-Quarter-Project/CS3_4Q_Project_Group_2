@@ -40,4 +40,5 @@ function validateForm() {
 
 function directPfp(){
     window.location.href = "page3.html";
+    return true;
 }
