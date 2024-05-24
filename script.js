@@ -21,3 +21,11 @@ function validateInput(input) {
 function removeValidation(input) {
     input.style.border = "2px solid #5cbd4f";
 }
+
+const firstNameElement = document.getElementById('firstName');
+const lastNameElement = document.getElementById('lastName');
+const emailElement = document.getElementById('email');
+const sexElement = document.getElementById('sex');
+const whyCampaignElement = document.getElementById('whyCampaign');
+
+const userData = JSON.parse(localStorage.getItem('userData'));
