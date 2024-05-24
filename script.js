@@ -23,7 +23,6 @@ function removeValidation(input) {
 }
 
 function validateForm() {
-    window.location.href = "page3.html";
     const formData = {
       firstName: document.getElementById("fname").value,
       lastName: document.getElementById("lname").value,
@@ -38,3 +37,7 @@ function validateForm() {
   
     return true;
   }
+
+function directPfp(){
+    window.location.href = "page3.html";
+}
