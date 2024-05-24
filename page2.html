@@ -1,39 +1,73 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Voice For Every Child</title>
-</head>
-<body>
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="p2style.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="logo" class="headerLogo">
-        <h1 class="titleHeader">A voice for every child</h1>
-    </header>
+    <div class="container">
+        <form id="myForm" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="input-box">
+                    <div class="input-group">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="fname" name="fName" placeholder="First Name *" required onblur="validateInput(this)" onfocus="removeValidation(this)">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-group">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="lname" name="lName" placeholder="Last Name *" required onblur="validateInput(this)" onfocus="removeValidation(this)">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-group">
+                        <label for="sex">* Sex:</label>
+			            <input type="radio" id="male" name="sex" value="male" required>
+			            <label for="male">Male</label>
+			            <input type="radio" id="female" name="sex" value="female" required>
+			            <label for="female">Female</label>
+			            <input type="radio" id="preferNotToSay" name="sex" value="preferNotToSay" required>
+			            <label for="preferNotToSay">Prefer not to say</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-group">
+                        <i class='bx bxl-gmail' ></i>
+                        <input type="email" id="email" name="Email" placeholder="Email *" required onblur="validateInput(this)" onfocus="removeValidation(this)">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-group">
+                        <i class='bx bxs-lock-alt' ></i>
+                        <input type="password" id="password" name="Password" placeholder="Password *" required onblur="validateInput(this)" onfocus="removeValidation(this)">
+                        <br>
+                        <label><input type="checkbox" name="myCheckbox" onclick="checkboxChanged()"> Show password</label><br>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-group">
+                        <i class='bx bxs-phone'></i>
+                        <input type="text" name="cNumber" placeholder="Contact Number">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-group">
+                        <label for="whyCampaign" style ="font-size: 20px;">Why I support this campaign? *</label><br>
+                        <textarea id="whyCampaign" name="whyCampaign" required onblur="validateInput(this)" onfocus="removeValidation(this)"></textarea>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" value="Submit">Sign Up</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
-    <section>
-        <h1>Welcome </h1><h1 id="name"></h1>
-        <!-- get data from sign up form by  $_GET['varname']-->
-        <img src="images/pfp.png" alt="">
-        <h3 id="name"></h3><br><br>
-        <p>Sex: </p><p id="sex"></p><br><br>
-        <p>Email Address: </p><p id="emailAddress"></p><br><br>
-        <p>Password: </p><p id="password"></p><br><br>
-        <p>Contact Number: </p><p id="contactNumber"></p>
-        <p>Why do you support our campaign? </p><br><p id="Support"></p>
-        <link rel="stylesheet" href="p3Style.css">
-    </section>
-
-    <footer>
-         <p>Made by Althea Nicole Enargan, Angela Marie Sabater, Dannica Grace Vosotros. 2024</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
