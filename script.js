@@ -22,10 +22,16 @@ function removeValidation(input) {
     input.style.border = "2px solid #5cbd4f";
 }
 
-const firstNameElement = document.getElementById('firstName');
-const lastNameElement = document.getElementById('lastName');
-const emailElement = document.getElementById('email');
-const sexElement = document.getElementById('sex');
-const whyCampaignElement = document.getElementById('whyCampaign');
-
-const userData = JSON.parse(localStorage.getItem('userData'));
+function validateForm() {
+    const formData = {
+      firstName: document.getElementById("fname").value,
+      lastName: document.getElementById("lname").value,
+      email: document.getElementById("email").value,
+      sex: document.querySelector('input[name="sex"]:checked').value,
+      whyCampaign: document.getElementById("whyCampaign").value
+    };
+  
+    localStorage.setItem("formData", JSON.stringify(formData));
+  
+    return true;
+  }
