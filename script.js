@@ -28,15 +28,13 @@ function validateForm() {
       lastName: document.getElementById("lname").value,
       email: document.getElementById("email").value,
       sex: document.querySelector('input[name="sex"]:checked').value,
-      password: document.getElementById("password").value,
-      contact: document.getElementByName("cNumber").value,
       whyCampaign: document.getElementById("whyCampaign").value
     };
   
     localStorage.setItem("formData", JSON.stringify(formData));
-
+  
     window.close();
     window.opener.location.href = "page3.html";
-    
+
     return true;
   }
