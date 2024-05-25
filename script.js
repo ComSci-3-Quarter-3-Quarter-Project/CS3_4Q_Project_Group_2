@@ -40,8 +40,3 @@ function validateForm() {
     
     return true;
   }
-
-function directPfp(){
-    window.location.href = "page3.html";
-    return true;
-}
