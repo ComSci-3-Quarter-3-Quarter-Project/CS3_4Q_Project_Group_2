@@ -29,8 +29,10 @@
    </footer>
 
    <script>
-    var name = JSON.stringify(localStorage.getItem("fname", "lname"));
-    document.getELementbyId('name').innerHTML = name;
+    var firstName = JSON.stringify(localStorage.getItem("firstName"));
+    document.getELementbyId('name').innerHTML = firstName;
+    var lastName = JSON.stringify(localStorage.getItem("lastName"));
+    document.getELementbyId('name').innerHTML = lastName;
     var sex = JSON.stringify(localStorage.getItem('sex'));
     document.getELementbyId('sex').innerHTML = sex;
     var email = JSON.stringify(localStorage.getItem('email'));
