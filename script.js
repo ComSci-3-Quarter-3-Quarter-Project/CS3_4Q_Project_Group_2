@@ -34,7 +34,10 @@ function validateForm() {
     };
   
     localStorage.setItem("formData", JSON.stringify(formData));
-  
+
+    window.close();
+    window.opener.location.href = "page3.html";
+    
     return true;
   }
 
