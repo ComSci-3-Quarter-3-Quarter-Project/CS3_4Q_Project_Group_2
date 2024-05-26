@@ -23,18 +23,24 @@ function removeValidation(input) {
 }
 
 function validateForm() {
-    const formData = {
-      firstName: document.getElementById("fname").value,
-      lastName: document.getElementById("lname").value,
-      email: document.getElementById("email").value,
-      sex: document.querySelector('input[name="sex"]:checked').value,
-      whyCampaign: document.getElementById("whyCampaign").value
-    };
-  
-    localStorage.setItem("formData", JSON.stringify(formData));
+    var firstName = document.getElementById("fname").value;
+    var lastName = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var contact = document.getElementById("contactNumber").value;
+    var sex = document.querySelector('input[name="sex"]:checked').value;
+    var whyCampaign = document.getElementById("whyCampaign").value;
+
+    localStorage.setItem("storefn", firstName);
+    localStorage.setItem("storeln", lastName);
+    localStorage.setItem("storeemail", email);
+    localStorage.setItem("storepword", password)
+    localStorage.setItem("storecn", contact);
+    localStorage.setItem("storesex", sex);
+    localStorage.setItem("storereason", whyCampaign);
   
     window.close();
     window.opener.location.href = "page3.html";
 
-    return true;
-  }
+    return false;
+}
