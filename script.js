@@ -5,6 +5,7 @@ function signUp(){
 function checkboxChanged(){
     showPass();
 }
+
 function showPass() {
     var passwordInput = document.getElementById("password");
     if (passwordInput.type === "password") {
@@ -18,6 +19,7 @@ function validateInput(input) {
         input.style.border = "2px solid #e0353a";
     }
 }
+
 function removeValidation(input) {
     input.style.border = "2px solid #5cbd4f";
 }
