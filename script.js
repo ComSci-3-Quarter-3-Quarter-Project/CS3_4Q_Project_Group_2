@@ -43,4 +43,4 @@ function validateForm() {
     window.opener.location.href = "page3.html";
 
     return false;
-}
+  }
