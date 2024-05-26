@@ -96,14 +96,14 @@ section p{
     
 }
 
-#sex, #emailAddress, #password, #contactNumber, #support{
+#sex, #email, #password, #cn, #support{
     font-size: 1.2em;
     background-color: #ffc7e27a;
     width: max-content;
     border-radius: 40px;
     margin-top: 1vh;
     margin-left: none;
-    padding: 0.7vw;
+    padding: 1vw;
 }
 
 footer{
