@@ -99,15 +99,15 @@ section p{
 }
 
 #sex, #email, #password, #cn, #support{
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffc7e27a;
-    width: max-content;
+    color: #2c4b80;    
     border-radius: 40px;
     margin-top: 1vh;
-    margin-left: none;
     padding: 0.5vw;
     margin: 0.5vh;
+    font-weight: 1000;
 }
 
 footer{
