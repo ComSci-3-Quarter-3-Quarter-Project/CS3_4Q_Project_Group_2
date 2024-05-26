@@ -15,12 +15,13 @@
         <h1>Welcome, </h1><h1 id="name"></h1>
         <!-- get data from sign up form by  local storage-->
         <img src="images/logo.png" id="logo"><img src="images/pfp.png" id="pfp">
-        <h3 id="name"></h3><br><br>
-        <p>Sex: </p><p id="sex"></p><br><br>
-        <p>Email Address: </p><p id="emailAddress"></p><br><br>
-        <p>Password: </p><p id="password"></p><br><br>
-        <p>Contact Number: </p><p id="contactNumber"></p> <br><br>
-        <p>Why do you support our campaign? </p><br><p id="support"></p>
+        <p>Sex: <span id="sex"></span></p><br><br>
+        <p>Email Address: <span id="email"></span></p><br><br>
+        <p>Password: <span id="password"></span></p><br><br>
+        <p>Contact Number: <span id="cn"></span></p> <br><br>
+        <p>Why do you support our campaign? </p><br><span id="support"></span>
+
+
         <link rel="stylesheet" href="p3Style.css">
     </section>
 
@@ -29,20 +30,20 @@
    </footer>
 
    <script>
-    var firstName = JSON.stringify(localStorage.getItem("firstName"));
-    document.getELementbyId('name').innerHTML = firstName;
-    var lastName = JSON.stringify(localStorage.getItem("lastName"));
-    document.getELementbyId('name').innerHTML = lastName;
-    var sex = JSON.stringify(localStorage.getItem('sex'));
-    document.getELementbyId('sex').innerHTML = sex;
-    var email = JSON.stringify(localStorage.getItem('email'));
-    document.getELementbyId('emailAddress').innerHTML = email;
-    var password = JSON.stringify(localStorage.getItem('password'));
-    document.getELementbyId('password').innerHTML = password;
-    var contact = JSON.stringify(localStorage.getItem('contact'));
-    document.getELementbyId('contactNumber').innerHTML = contact;
-    var whyCampaign = JSON.stringify(localStorage.getItem('whyCampaign'));
-    document.getELementbyId('support').innerHTML = whyCampaign;
+    var outputFname = localStorage.getItem("storefn");
+    var outputLname = localStorage.getItem("storeln");
+    var outputEmail = localStorage.getItem('storeemail');
+    var outputSex = localStorage.getItem('storesex');
+    var outputPassword = localStorage.getItem('storepword');
+    var outputContact = localStorage.getItem('storecn');
+    var outputReason = localStorage.getItem('storereason');
+
+    document.getElementById('name').innerHTML = outputFname + " " + outputLname;
+    document.getElementById("sex").innerHTML = outputSex;
+    document.getElementById('email').innerHTML = outputEmail;
+    document.getElementById('password').innerHTML = outputPassword;
+    document.getElementById('cn').innerHTML = outputContact;
+    document.getElementById('support').innerHTML = outputReason;
 </script>
 </body>
 </html>
