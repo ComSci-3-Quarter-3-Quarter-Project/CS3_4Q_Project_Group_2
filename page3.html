@@ -40,7 +40,6 @@
     var outputReason = localStorage.getItem('storereason');
 
     document.getElementById('name').innerHTML = outputFname + " " + outputLname;
-    document.getElementById("sex").innerHTML = outputSex;
     document.getElementById('email').innerHTML = outputEmail;
     document.getElementById('password').innerHTML = outputPassword;
     document.getElementById('cn').innerHTML = outputContact;
@@ -48,14 +47,17 @@
 
     if (outputSex == "female"){
         document.getElementById("pfp").src = "images/female.png";
+        document.getElementById("sex").innerHTML = "Female";
     }
 
     else if (outputSex == "male"){
         document.getElementById("pfp").src = "images/male.png";
+        document.getElementById("sex").innerHTML = "Male";
     }
 
     else if (outputSex == "preferNotToSay"){
         document.getElementById("pfp").src = "images/na.png";
+        document.getElementById("sex").innerHTML = "Prefer not to say";
     }
 </script>
 </body>
