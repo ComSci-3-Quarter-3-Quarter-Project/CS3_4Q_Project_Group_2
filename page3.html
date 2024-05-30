@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AVFEA</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
 <body>
     <header>
@@ -12,9 +13,9 @@
     </header>
 
     <section>
-        <h1>Welcome, </h1><h1 id="name"></h1><br>
+        <h1>Welcome, </h1><h1 id="name"></h1>
         <!-- get data from sign up form by  local storage-->
-        <img src="images/logo.png" id="logo"><img src="images/pfp.png" id="pfp"><br><br>
+        <img src="images/logo.png" id="logo"><img id="pfp"> <br><br>
         <p>Sex: <span id="sex"></span></p><br><br>
         <p>Email Address: <span id="email"></span></p><br><br>
         <p>Password: <span id="password"></span></p><br><br>
@@ -44,6 +45,18 @@
     document.getElementById('password').innerHTML = outputPassword;
     document.getElementById('cn').innerHTML = outputContact;
     document.getElementById('support').innerHTML = outputReason;
+
+    if (outputSex == "female"){
+        document.getElementById("pfp").src = "images/female.png";
+    }
+
+    else if (outputSex == "male"){
+        document.getElementById("pfp").src = "images/male.png";
+    }
+
+    else if (outputSex == "preferNotToSay"){
+        document.getElementById("pfp").src = images/na.png;
+    }
 </script>
 </body>
 </html>
