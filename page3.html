@@ -8,18 +8,20 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="logo" class="headerLogo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="headerLogo"></a>
         <h1 class="titleHeader">A voice for every child</h1>
     </header>
 
     <section>
+        <img src="images/logo.png" id="logo"><br>
         <h1>Welcome, </h1><h1 id="name"></h1>
+        <br><img id="pfp"> <br><br>
         <!-- get data from sign up form by  local storage-->
-        <img src="images/logo.png" id="logo"><img id="pfp"> <br><br>
-        <p>Sex: <span id="sex"></span></p><br><br>
-        <p>Email Address: <span id="email"></span></p><br><br>
-        <p>Password: <span id="password"></span></p><br><br>
-        <p>Contact Number: <span id="cn"></span></p> <br><br>
+        
+        <p>Sex: </p><br><span id="sex"></span><br><br><br>
+        <p>Email Address: </p><br><span id="email"></span><br><br><br>
+        <p>Password: </p><br><span id="password"></span><br><br><br>
+        <p>Contact Number: </p><br><span id="cn"></span> <br><br><br>
         <p>Why do you support our campaign? </p><br><span id="support"></span>
 
 
@@ -31,34 +33,32 @@
    </footer>
 
    <script>
-    var outputFname = localStorage.getItem("storefn");
-    var outputLname = localStorage.getItem("storeln");
-    var outputEmail = localStorage.getItem('storeemail');
-    var outputSex = localStorage.getItem('storesex');
-    var outputPassword = localStorage.getItem('storepword');
-    var outputContact = localStorage.getItem('storecn');
-    var outputReason = localStorage.getItem('storereason');
+        var outputFname = localStorage.getItem("storefn");
+        var outputLname = localStorage.getItem("storeln");
+        var outputEmail = localStorage.getItem('storeemail');
+        var outputSex = localStorage.getItem('storesex');
+        var outputPassword = localStorage.getItem('storepword');
+        var outputContact = localStorage.getItem('storecn');
+        var outputReason = localStorage.getItem('storereason');
 
-    document.getElementById('name').innerHTML = outputFname + " " + outputLname;
-    document.getElementById('email').innerHTML = outputEmail;
-    document.getElementById('password').innerHTML = outputPassword;
-    document.getElementById('cn').innerHTML = outputContact;
-    document.getElementById('support').innerHTML = outputReason;
+        document.getElementById('name').innerHTML = outputFname + " " + outputLname + "!";
+        document.getElementById("sex").innerHTML = outputSex;
+        document.getElementById('email').innerHTML = outputEmail;
+        document.getElementById('password').innerHTML = outputPassword;
+        document.getElementById('cn').innerHTML = outputContact;
+        document.getElementById('support').innerHTML = outputReason;
 
-    if (outputSex == "female"){
-        document.getElementById("pfp").src = "images/female.png";
-        document.getElementById("sex").innerHTML = "Female";
-    }
+        if (outputSex == "female"){
+            document.getElementById("pfp").src = "images/female.png";
+        }
 
-    else if (outputSex == "male"){
-        document.getElementById("pfp").src = "images/male.png";
-        document.getElementById("sex").innerHTML = "Male";
-    }
+        else if (outputSex == "male"){
+            document.getElementById("pfp").src = "images/male.png";
+        }
 
-    else if (outputSex == "preferNotToSay"){
-        document.getElementById("pfp").src = "images/na.png";
-        document.getElementById("sex").innerHTML = "Prefer not to say";
-    }
-</script>
+        else if (outputSex == "preferNotToSay"){
+            document.getElementById("pfp").src = "images/na.png";
+        }
+    </script>
 </body>
 </html>
